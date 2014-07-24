@@ -19,25 +19,25 @@
 
 if (WP_ENV == 'development') { /** Local dev setup */
     define('DB_NAME', '');
-    define('DB_USER', '');
-    define('DB_PASSWORD', '');
-    define('DB_HOST', ''); // probably 'localhost'
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', 'god');
+    define('DB_HOST', 'localhost'); // probably 'localhost'
     define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
     define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
     define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
     define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
-} else { /** Production setup */
+} else { /** Staging setup */
     define('DB_NAME', '');
     define('DB_USER', '');
     define('DB_PASSWORD', '');
-    define('DB_HOST', ''); // probably 'localhost'
+    define('DB_HOST', 'localhost'); // probably 'localhost'
     define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
     define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
     define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
-    // define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/site.com/wp-content');
     define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
-	// define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
-} 
+    // define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/site.com/wp-content');
+    // define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
+}
 
 /* ==========================================================================
    Database settings. Don't change this if in doubt.
