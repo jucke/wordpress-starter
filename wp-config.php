@@ -20,7 +20,7 @@
 if (WP_ENV == 'development') { /** Local dev setup */
     define('DB_NAME', '');
     define('DB_USER', 'root');
-    define('DB_PASSWORD', 'god');
+    define('DB_PASSWORD', '');
     define('DB_HOST', 'localhost'); // probably 'localhost'
     define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
     define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
