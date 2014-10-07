@@ -1,4 +1,4 @@
 wordpress-starter
 =================
 
-Starter configuration for a Wordpress site.
+Starter configuration for a WordPress site.
