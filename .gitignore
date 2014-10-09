@@ -1,3 +1,4 @@
 /backup-*.sql
 /pass.md
+/logs/*.log
 .DS_Store
